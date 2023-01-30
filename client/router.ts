@@ -1,16 +1,16 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import FreetsPage from './components/Freet/FreetsPage.vue';
-import AccountPage from './components/Account/AccountPage.vue';
-import LoginPage from './components/Login/LoginPage.vue';
+import HomePage from './components/Home/HomePage.vue';
+import AboutPage from './components/About/AboutPage.vue';
+import ClassPage from './components/Class/ClassPage.vue';
 import NotFound from './NotFound.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
-  {path: '/', name: 'Home', component: FreetsPage},
-  {path: '/account', name: 'Account', component: AccountPage},
-  {path: '/login', name: 'Login', component: LoginPage},
+  {path: '/', name: 'Home', component: HomePage},
+  {path: '/about', name: 'About', component: AboutPage},
+  {path: '/class', name: '6438', component: ClassPage},
   {path: '*', name: 'Not Found', component: NotFound}
 ];
 

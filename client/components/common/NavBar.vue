@@ -4,27 +4,17 @@
 
 <template>
   <nav>
-    <div class="left">
-      <img src="../../public/logo.svg">
-      <h1 class="title">
-        Fritter
-      </h1>
-    </div>
-    <div class="right">
+    <div class="center">
+      <router-link to="/class">
+        /6483
+      </router-link>
       <router-link to="/">
-        Home
+        home
       </router-link>
       <router-link
-        v-if="$store.state.username"
-        to="/account"
+        to="/about"
       >
-        Account
-      </router-link>
-      <router-link
-        v-else
-        to="/login"
-      >
-        Login
+        about
       </router-link>
     </div>
     <section class="alerts">
@@ -42,9 +32,8 @@
 <style scoped>
 nav {
     padding: 1vw 2vw;
-    background-color: #ccc;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: relative;
 }
@@ -73,6 +62,13 @@ img {
 
 .right a {
     margin-left: 5px;
+}
+
+.center {
+  display: grid;
+  gap: 40px;
+  grid-auto-flow: column;
+  align-items: center;
 }
 
 .alerts {

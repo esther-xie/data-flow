@@ -14,13 +14,6 @@ export default {
   name: 'App',
   components: {NavBar},
   beforeCreate() {
-    // Sync stored username to current session
-    fetch('/api/users/session', {
-      credentials: 'same-origin' // Sends express-session credentials with request
-    }).then(res => res.json()).then(res => {
-      const user = res.user;
-      this.$store.commit('setUsername', user ? user.username : null);
-    });
 
     // Clear alerts on page refresh
     this.$store.state.alerts = {};
@@ -28,9 +21,13 @@ export default {
 };
 </script>
 
+<link rel="stylesheet" href="https://use.typekit.net/mtx7dtu.css"></link>
+
 <style>
 * {
   box-sizing: border-box;
+  font-family: 'Minion Pro', serif;
+  font-size: 16px;
 }
 
 body {
@@ -44,6 +41,34 @@ body {
 
 main {
   padding: 0 5em 5em;
+}
+
+a:link {
+  color:black;
+  filter:blur(1px);
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  filter:none;
+}
+
+a.router-link-exact-active {
+  filter:none;
+}
+
+.center-text{
+  justify-self: center;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .alerts {
@@ -74,4 +99,5 @@ main {
 .alerts .success {
     background-color: rgb(45, 135, 87);
 }
+
 </style>
