@@ -8,7 +8,10 @@
       <router-link to="/class">
         /6483
       </router-link>
-      <router-link to="/">
+      <router-link to="/work">
+        work
+      </router-link>
+      <router-link to="/home">
         home
       </router-link>
       <router-link

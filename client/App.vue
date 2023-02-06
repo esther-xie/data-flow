@@ -55,9 +55,10 @@ a:visited {
 
 a:hover {
   filter:none;
+  text-decoration: underline;
 }
 
-a.router-link-exact-active {
+a.router-link-active {
   filter:none;
 }
 

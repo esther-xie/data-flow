@@ -3,14 +3,18 @@ import VueRouter from 'vue-router';
 import HomePage from './components/Home/HomePage.vue';
 import AboutPage from './components/About/AboutPage.vue';
 import ClassPage from './components/Class/ClassPage.vue';
+import WorkPage from './components/Work/WorkPage.vue';
+import CaterhubPage from './components/Work/CaterhubPage.vue';
 import NotFound from './NotFound.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
-  {path: '/', name: 'Home', component: HomePage},
+  {path: '/home', name: 'Home', component: HomePage},
   {path: '/about', name: 'About', component: AboutPage},
   {path: '/class', name: '6438', component: ClassPage},
+  {path: '/work', name: 'Work', component: WorkPage},
+  {path: '/work/caterhub', name: 'Caterhub', component: CaterhubPage},
   {path: '*', name: 'Not Found', component: NotFound}
 ];
 
