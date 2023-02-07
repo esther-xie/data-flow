@@ -21,12 +21,13 @@ export default {
 };
 </script>
 
-<link rel="stylesheet" href="https://use.typekit.net/mtx7dtu.css"></link>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
 * {
   box-sizing: border-box;
-  font-family: 'Minion Pro', serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 16px;
 }
 
@@ -37,6 +38,8 @@ body {
   padding: 0;
   margin: 0;
   font-size: 1.2em;
+  background-color: black !important;
+  -webkit-text-fill-color: #fff;
 }
 
 main {
@@ -45,7 +48,6 @@ main {
 
 a:link {
   color:black;
-  filter:blur(1px);
   text-decoration: none;
 }
 
@@ -53,22 +55,28 @@ a:visited {
   color: black;
 }
 
-a:hover {
-  filter:none;
-  text-decoration: underline;
-}
-
-a.router-link-active {
-  filter:none;
+button {
+  background-color: black !important;
+  border: 0.5px solid #fff !important;
+  padding: 15px 32px;
+  width:fit-content;
 }
 
 .center-text{
-  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
   position:absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  max-width: 40%;
+}
+
+h1 {
+  font-size: 5rem !important;
   text-align: center;
 }
 

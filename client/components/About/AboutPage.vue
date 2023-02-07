@@ -1,28 +1,9 @@
 <template>
     <main>
-    <div id="purplefilter" :class="{ 'filteron': isActive}">
-      <video autoplay muted loop id="skatevideo" @click="handleClick">
-        <source src="..\public\skate.mp4" type="video/mp4">
-      </video>
-      <img id="retreatgif" src="..\public\retreat.gif" @click="handleClick">
-      <video autoplay muted loop id="aboutvideo" @click="isActive = !isActive">
-        <source src="..\public\wave.mp4" type="video/mp4">
-      </video>
-      <video autoplay muted loop id="flowervideo" @click="handleClick">
-        <source src="..\public\flower.mp4" type="video/mp4">
-      </video>
-      <video autoplay muted loop id="airvideo" @click="handleClick">
-        <source src="..\public\air.mp4" type="video/mp4">
-      </video>
-      <video autoplay muted loop id="trainvideo" @click="handleClick">
-        <source src="..\public\train.mp4" type="video/mp4">
-      </video>
+    
       <div class="center-text">
-        <h1> Hi, this is Esther Xie. </h1>
-        <h1> I'm a designer currently studying at Harvard University. </h1>
-        <h1> 我的母语是中文。 ⸜(* ॑꒳ ॑* )⸝ </h1>
-        <h1> 日本語は勉強中です。 (◕ܫ◕) </h1>
-      </div>
+        <h1> Data flows is a project of Rebooting Social Media Institute from the Berkman Klein Center at Harvard University </h1>
+
       </div>
     </main>
   </template>

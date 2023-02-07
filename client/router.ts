@@ -1,20 +1,18 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import LandingPage from './components/Home/LandingPage.vue';
 import HomePage from './components/Home/HomePage.vue';
 import AboutPage from './components/About/AboutPage.vue';
-import ClassPage from './components/Class/ClassPage.vue';
-import WorkPage from './components/Work/WorkPage.vue';
-import CaterhubPage from './components/Work/CaterhubPage.vue';
+import ExtensionPage from './components/Extension/ExtensionPage.vue';
 import NotFound from './NotFound.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
+  {path: '/', name: 'Landing', component: LandingPage},
   {path: '/home', name: 'Home', component: HomePage},
   {path: '/about', name: 'About', component: AboutPage},
-  {path: '/class', name: '6438', component: ClassPage},
-  {path: '/work', name: 'Work', component: WorkPage},
-  {path: '/work/caterhub', name: 'Caterhub', component: CaterhubPage},
+  {path: '/extension', name: 'Extension', component: ExtensionPage},
   {path: '*', name: 'Not Found', component: NotFound}
 ];
 
