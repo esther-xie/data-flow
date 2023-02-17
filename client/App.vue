@@ -21,15 +21,17 @@ export default {
 };
 </script>
 
-
 <style>
+
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 * {
   box-sizing: border-box;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 16px;
+
 }
+
 
 body {
   height: 100vh;
@@ -53,13 +55,6 @@ a:link {
 
 a:visited {
   color: black;
-}
-
-button {
-  background-color: black !important;
-  border: 0.5px solid #fff !important;
-  padding: 15px 32px;
-  width:fit-content;
 }
 
 .center-text{

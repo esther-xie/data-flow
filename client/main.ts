@@ -5,6 +5,9 @@ import store from './store';
 import { BootstrapVue } from 'bootstrap-vue'
 
 // Import Bootstrap and BootstrapVue CSS files (order is important)
+
+import './custom-vars.scss'
+
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 

@@ -1,10 +1,10 @@
 <template>
-    <div class="topicfilters">
-        <button class="btn-filter" v-on:click="filter = none"> all </button>
-        <button class="btn-filter" v-on:click="filter = contents"> contents </button>
-        <button class="btn-filter" v-on:click="filter = cookies"> cookies </button>
-        <button class="btn-filter" v-on:click="filter = types"> data types </button>
-        <button class="btn-filter" v-on:click="filter = accesses"> accesses </button>
+    <div class="topicfilters d-flex flex-row">
+        <button type="button" class="p-2 btn btn-outline-light" v-on:click="filter = none"> all </button>
+        <button type="button" class="p-2 btn btn-outline-light" v-on:click="filter = contents"> contents </button>
+        <button type="button" class="p-2 btn btn-outline-light" v-on:click="filter = cookies"> cookies </button>
+        <button type="button" class="p-2 btn btn-outline-light" v-on:click="filter = types"> data types </button>
+        <button type="button" class="p-2 btn btn-outline-light" v-on:click="filter = accesses"> accesses </button>
     </div>
 </template>
 
@@ -15,13 +15,6 @@ export default {
 </script>
 
 <style scoped>
-.topicfilters {
-  display: grid;
-  gap: 20px;
-  grid-auto-flow: column;
-  align-items: flex-start;
-  font-size: 14px !important;
-}
 
 .btn-filter {
     border: 0px solid black !important;

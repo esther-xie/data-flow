@@ -2,7 +2,7 @@
     <main>
     
       <div class="center-text">
-        <h1> Data flows is a project of Rebooting Social Media Institute from the Berkman Klein Center at Harvard University </h1>
+        <p> Data flows is a project of Rebooting Social Media Institute from the Berkman Klein Center at Harvard University. </p>
 
       </div>
     </main>

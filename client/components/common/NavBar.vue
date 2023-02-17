@@ -3,24 +3,24 @@
 <!-- This navbar takes advantage of both flex and grid layouts for positioning elements; feel free to redesign as you see fit! -->
 
 <template>
-  <nav v-if="isNotLanding">
-    <div class="left">
-    <button class="nav-btn" id="btn-restart"> <router-link to="/">
+  <nav v-if="isNotLanding" class="navbar" id=" navbar">
+    <div class="d-flex flex-row">
+    <button type="button" class="p-2 btn btn-outline-primary"> <router-link to="/">
         restart
       </router-link> </button>
-      <button class="nav-btn" id="btn-extension"><router-link to="/extension">
+      <button type="button" class="p-2 btn btn-outline-secondary"><router-link to="/extension">
         Extension
       </router-link> </button>
-      <button v-if="isNotHome" class="nav-btn" id="btn-topics"><router-link to="/home">
+      <button v-if="isNotHome" type="button" class="p-2 btn btn-outline-success"><router-link to="/home">
         data flows
       </router-link></button>
-      <button v-else class="nav-btn" id="btn-topics" @click="showTopics = !showTopics">
+      <button v-else type="button" class="p-2 btn btn-outline-success" id="btn-topics" @click="showTopics = !showTopics">
         topics
       </button>
-      <TopicsFilterComponent v-if="showTopics"/>
+      <TopicsFilterComponent class="p-2" v-if="showTopics && !isNotHome"/>
     </div>
-    <div class="right">
-      <button class="nav-btn" id="btn-about"><router-link to="/about">
+    <div class="d-flex flex-row-reverse">
+      <button  type="button" class="p-2 btn btn-outline-danger"><router-link to="/about">
         about
       </router-link> </button>
     </div>
@@ -66,26 +66,8 @@ export default {
 img {
     height: 32px;
 }
-
-nav{
-  padding: 1vw 2vw;
-  display: flex;
-  align-items: center;
-  position: relative;
-  font-size: 20px;
-  margin: 40px;
-}
-.left {
-  display: grid;
-  gap: 40px;
-  grid-auto-flow: column;
-  align-items: flex-start;
-  left: 0px;
-  position: absolute;
-}
-.right{
-  right: 0px;
-  position: absolute;
+.p-2{
+  margin: 0.5rem !important;
 }
 .nav-btn{
   padding: 6px 20px;
