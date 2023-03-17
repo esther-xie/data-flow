@@ -3,7 +3,7 @@
     
       <div class="center-text">
         <p> Data flows is a project of Rebooting Social Media Institute from the Berkman Klein Center at Harvard University. </p>
-
+        
       </div>
     </main>
   </template>

@@ -9,12 +9,11 @@
 
 <script>
 import NavBar from '@/components/common/NavBar.vue';
-
+  
 export default {
   name: 'App',
   components: {NavBar},
   beforeCreate() {
-
     // Clear alerts on page refresh
     this.$store.state.alerts = {};
   }
@@ -23,13 +22,22 @@ export default {
 
 <style>
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@font-face {
+  font-family: "Movement";
+  src: url("../client/public/Webfonts/Movement-DirectThin.woff2");
+}
+
+@font-face {
+  font-family: 'Movement-black';
+  src: url("../client/public/Webfonts/Movement-DirectBlack.woff2");
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap'); */
 
 * {
   box-sizing: border-box;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Movement', serif;
   font-size: 16px;
-
 }
 
 
@@ -71,6 +79,7 @@ a:visited {
 }
 
 h1 {
+  font-family: 'Movement-black';
   font-size: 5rem !important;
   text-align: center;
 }
