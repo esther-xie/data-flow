@@ -39,32 +39,32 @@
     components: {
       BubbleChart,
     },
-    data() {
-      return {
-        data: null,
-        error: null,
-        case: null
-      }
-    },
-    methods: {
-      makeApiCall() {
-      let url = 'https://api.tosdr.org/case/v1/';
-      this.$axios.get((url),{
-        params: {
-          case: 175
-        }
-      })
-        .then(response => {
-          console.log(response.data);
-        })
-        .catch(error => {
-          console.log(error);
-        });
-    },
-  },
-    mounted() {
-      this.makeApiCall()
-    }
+  //   data() {
+  //     return {
+  //       data: null,
+  //       error: null,
+  //       case: null
+  //     }
+  //   },
+  //   methods: {
+  //     makeApiCall() {
+  //     let url = 'https://api.tosdr.org/case/v1/';
+  //     this.$axios.get((url),{
+  //       params: {
+  //         case: 175
+  //       }
+  //     })
+  //       .then(response => {
+  //         console.log(response.data);
+  //       })
+  //       .catch(error => {
+  //         console.log(error);
+  //       });
+  //   },
+  // },
+  //   mounted() {
+  //     this.makeApiCall()
+  //   }
   }
 </script>
 

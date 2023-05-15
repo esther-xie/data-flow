@@ -13,10 +13,6 @@ import NavBar from '@/components/common/NavBar.vue';
 export default {
   name: 'App',
   components: {NavBar},
-  beforeCreate() {
-    // Clear alerts on page refresh
-    this.$store.state.alerts = {};
-  }
 };
 </script>
 

@@ -24,15 +24,6 @@
         about
       </router-link> </button>
     </div>
-    <section class="alerts">
-      <article
-        v-for="(status, alert, index) in $store.state.alerts"
-        :key="index"
-        :class="status"
-      >
-        <p>{{ alert }}</p>
-      </article>
-    </section>
   </nav>
 </template>
 
